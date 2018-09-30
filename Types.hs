@@ -1,6 +1,7 @@
 module Types where
 
   type Coord = (Int, Int)
+  type MapPoint = (Coord, Tile)
 
   data Player = Player {
     pPos :: Coord,
@@ -16,3 +17,9 @@ module Types where
     currentMap :: String,
     player :: Player
   } deriving (Show, Eq, Ord)
+
+  data LevelMap = LevelMap {
+    points :: [MapPoint]
+  }
+
+  data Tile = Wall | Forward | ForwardLeftTurn | XIntersection | LeftTurn | RightTurn | ForwardRightTurn | TIntersection | UnknownTile | DeadEnd deriving (Show, Eq, Ord)
