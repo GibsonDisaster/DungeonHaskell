@@ -22,4 +22,4 @@ module Types where
     points :: [MapPoint]
   }
 
-  data Tile = Wall | Forward | ForwardLeftTurn | XIntersection | LeftTurn | RightTurn | ForwardRightTurn | TIntersection | UnknownTile | DeadEnd deriving (Show, Eq, Ord)
+  data Tile = Wall | Forward | ForwardLeftTurn | XIntersection | LeftTurn | RightTurn | ForwardRightTurn | TIntersection | UnknownTurn | UnknownTile | DeadEnd deriving (Show, Eq, Ord)

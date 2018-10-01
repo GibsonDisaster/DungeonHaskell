@@ -2,6 +2,7 @@ module Main where
   import Graphics.Gloss.Game hiding (play)
   import Graphics.Gloss.Interface.Pure.Game
   import Types
+  import Util
 
   initPlayer :: Player
   initPlayer = Player {
